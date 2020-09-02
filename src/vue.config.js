@@ -13,5 +13,7 @@ module.exports = {
         skipWaiting: true
       }
     },
-    publicPath: process.env.PUB_PATH || '/'
+    publicPath: process.env.NODE_ENV === 'gh-pages'
+    ? '/countdown1/'
+    : '/'
   }
