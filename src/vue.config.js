@@ -12,5 +12,6 @@ module.exports = {
         clientsClaim: true,
         skipWaiting: true
       }
-    }
+    },
+    publicPath: process.env.PUB_PATH || '/'
   }
