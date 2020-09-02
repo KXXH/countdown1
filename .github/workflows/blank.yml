@@ -27,7 +27,9 @@ jobs:
       - name: Set env_var and Build
         run: |
           export NODE_ENV=gh-pages
+          npm install -g @vue/cli
           npm install
+          vue add pwa
           npm run build
       - name: Publish to gh-pages
         run: |
