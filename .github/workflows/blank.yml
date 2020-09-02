@@ -26,7 +26,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Set env_var and Build
         run: |
-          export PUB_PATH=countdown1
+          export NODE_ENV=gh-pages
           npm install
           npm run build
       - name: Publish to gh-pages
